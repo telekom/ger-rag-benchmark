@@ -1,0 +1,32 @@
+group:
+  - multiple_choice
+task: ger_rag_benchmark_task1
+group: ger_rag_benchmark
+dataset_path: deutsche-telekom/ger-rag-eval-task2
+dataset_name: null
+output_type: multiple_choice
+training_split: null
+validation_split: null
+test_split: test
+doc_to_text: |-
+  Welche der folgenden Fragen (A oder B oder C oder D) lässt sich anhand des Kontext beantworten?
+
+  Kontext:
+  {{context}}
+
+  Fragen:
+  A: {{choice_a}}
+  B: {{choice_b}}
+  C: {{choice_c}}
+  D: {{choice_d}}
+doc_to_choice: ["A", "B", "C", "D"]
+doc_to_target: target
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0
