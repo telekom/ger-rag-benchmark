@@ -2,7 +2,7 @@ group:
   - multiple_choice
 task: ger_rag_benchmark_task1
 group: ger_rag_benchmark
-dataset_path: deutsche-telekom/ger-rag-eval-task2
+dataset_path: deutsche-telekom/ger-rag-eval-task1
 dataset_name: null
 output_type: multiple_choice
 training_split: null
