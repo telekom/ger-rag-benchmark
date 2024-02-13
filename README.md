@@ -52,10 +52,10 @@ hf (pretrained=DiscoResearch/DiscoLM_German_7b_v1), gen_kwargs: (None), limit: N
 vllm (pretrained=/mnt/azureml/xxx/base_models/Nous_Hermes_Mixtral,tensor_parallel_size=2,dtype=auto,gpu_memory_utilization=0.8,data_parallel_size=1), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: auto
 |         Tasks         |Version|Filter|n-shot| Metric |Value|   |Stderr|
 |-----------------------|------:|------|------|--------|----:|---|-----:|
-|ger_rag_benchmark_task3|      1|none  |None  |acc     |0.235|±  |0.0134|
-|                       |       |none  |None  |acc_norm|0.235|±  |0.0134|
-|ger_rag_benchmark_task2|      1|none  |None  |acc     |0.327|±  |0.0148|
-|                       |       |none  |None  |acc_norm|0.327|±  |0.0148|
 |ger_rag_benchmark_task1|      1|none  |None  |acc     |0.177|±  |0.0121|
 |                       |       |none  |None  |acc_norm|0.177|±  |0.0121|
+|ger_rag_benchmark_task2|      1|none  |None  |acc     |0.327|±  |0.0148|
+|                       |       |none  |None  |acc_norm|0.327|±  |0.0148|
+|ger_rag_benchmark_task3|      1|none  |None  |acc     |0.235|±  |0.0134|
+|                       |       |none  |None  |acc_norm|0.235|±  |0.0134|
 ```
