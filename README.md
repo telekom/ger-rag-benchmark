@@ -49,6 +49,16 @@ hf (pretrained=DiscoResearch/DiscoLM_German_7b_v1), gen_kwargs: (None), limit: N
 |ger_rag_benchmark_task3|      1|none  |None  |acc     |0.253|±  |0.0138|
 |                       |       |none  |None  |acc_norm|0.253|±  |0.0138|
 
+vllm (pretrained=/mnt/azureml/xxx/base_models/Mixtral-Instruct,tensor_parallel_size=2,dtype=auto,gpu_memory_utilization=0.8,data_parallel_size=1), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: auto
+|         Tasks         |Version|Filter|n-shot| Metric |Value|   |Stderr|
+|-----------------------|------:|------|------|--------|----:|---|-----:|
+|ger_rag_benchmark_task1|      1|none  |None  |acc     |0.261|±  |0.0139|
+|                       |       |none  |None  |acc_norm|0.261|±  |0.0139|
+|ger_rag_benchmark_task2|      1|none  |None  |acc     |0.276|±  |0.0141|
+|                       |       |none  |None  |acc_norm|0.276|±  |0.0141|
+|ger_rag_benchmark_task3|      1|none  |None  |acc     |0.237|±  |0.0135|
+|                       |       |none  |None  |acc_norm|0.237|±  |0.0135|
+
 vllm (pretrained=/mnt/azureml/xxx/base_models/Nous_Hermes_Mixtral,tensor_parallel_size=2,dtype=auto,gpu_memory_utilization=0.8,data_parallel_size=1), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: auto
 |         Tasks         |Version|Filter|n-shot| Metric |Value|   |Stderr|
 |-----------------------|------:|------|------|--------|----:|---|-----:|
