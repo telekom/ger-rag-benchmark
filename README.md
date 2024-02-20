@@ -16,7 +16,21 @@ lm_eval --model hf \
     --batch_size 1
 ```
 
-## Results
+## Results (ger_rag_benchmark_chatml)
+
+```text
+vllm (pretrained=/mnt/azureml/xxx/base_models/Mixtral-Instruct,tensor_parallel_size=2,dtype=auto,gpu_memory_utilization=0.8,data_parallel_size=1), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: auto
+|            Tasks             |Version|Filter|n-shot| Metric |Value|   |Stderr|
+|------------------------------|------:|------|------|--------|----:|---|-----:|
+|ger_rag_benchmark_chatml_task1|      1|none  |None  |acc     |0.947|±  |0.0071|
+|                              |       |none  |None  |acc_norm|0.947|±  |0.0071|
+|ger_rag_benchmark_chatml_task2|      1|none  |None  |acc     |0.282|±  |0.0142|
+|                              |       |none  |None  |acc_norm|0.282|±  |0.0142|
+|ger_rag_benchmark_chatml_task3|      1|none  |None  |acc     |0.474|±  |0.0158|
+|                              |       |none  |None  |acc_norm|0.474|±  |0.0158|
+```
+
+## Results (ger_rag_benchmark)
 
 ```text
 hf (pretrained=TinyLlama/TinyLlama-1.1B-Chat-v1.0), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: 8
