@@ -1,7 +1,7 @@
 group:
   - multiple_choice
-task: ger_rag_benchmark_task5
-group: ger_rag_benchmark
+task: ger_rag_benchmark_chatml_task5
+group: ger_rag_benchmark_chatml
 dataset_path: deutsche-telekom/ger-rag-eval-task5
 dataset_name: null
 output_type: multiple_choice
