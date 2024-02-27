@@ -1,0 +1,35 @@
+group:
+  - multiple_choice
+task: ger_rag_benchmark_task5
+group: ger_rag_benchmark
+dataset_path: deutsche-telekom/ger-rag-eval-task5
+dataset_name: null
+output_type: multiple_choice
+training_split: null
+validation_split: null
+test_split: test
+doc_to_text: |-
+  <|im_start|>system
+  Sie sind ein hilfreicher Experte, der auf Basis von beigefügten Dokumenten Fragen beantwortet.<|im_end|>
+  <|im_start|>user
+  Lässt sich die Frage mit Hilfe der Informationen aus dem Kontext beantworten?
+  Antworte mit J für ja oder N für nein.
+
+  Der Kontext:
+
+  {{context}}
+
+  Die Frage: {{question}}
+  {{choice_d}}<|im_end|>
+  <|im_start|>assistant\n
+doc_to_choice: ["J", "N"]
+doc_to_target: target
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0
