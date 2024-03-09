@@ -9,7 +9,7 @@ training_split: null
 validation_split: null
 test_split: test
 doc_to_text: |-
-  Lässt sich die Frage mit Hilfe der Informationen aus dem Kontext beantworten?
+  Lässt sich die Frage mithilfe der Informationen aus dem Kontext beantworten?
   Antworte mit J für ja oder N für nein.
 
   Der Kontext:

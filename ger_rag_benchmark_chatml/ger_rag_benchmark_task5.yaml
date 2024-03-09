@@ -12,7 +12,7 @@ doc_to_text: |-
   <|im_start|>system
   Sie sind ein hilfreicher Experte, der auf Basis von beigefügten Dokumenten Fragen beantwortet.<|im_end|>
   <|im_start|>user
-  Lässt sich die Frage mit Hilfe der Informationen aus dem Kontext beantworten?
+  Lässt sich die Frage mithilfe der Informationen aus dem Kontext beantworten?
   Antworte mit J für ja oder N für nein.
 
   Der Kontext:
