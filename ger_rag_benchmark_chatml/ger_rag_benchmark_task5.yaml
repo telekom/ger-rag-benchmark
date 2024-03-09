@@ -19,8 +19,7 @@ doc_to_text: |-
 
   {{context}}
 
-  Die Frage: {{question}}
-  {{choice_d}}<|im_end|>
+  Die Frage: {{question}}<|im_end|>
   <|im_start|>assistant\n
 doc_to_choice: ["J", "N"]
 doc_to_target: target
